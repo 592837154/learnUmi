@@ -17,6 +17,11 @@ const routes = [
     component: require('../../layouts/index.js').default,
     routes: [
       {
+        path: '/guide',
+        exact: true,
+        component: require('../guide.js').default,
+      },
+      {
         path: '/',
         exact: true,
         component: require('../index.js').default,
@@ -25,8 +30,11 @@ const routes = [
         path: '/profile',
         exact: true,
         component: require('../profile.js').default,
-        title: '个人中心',
-        Routes: [require('../../PrivateRoute.js').default],
+      },
+      {
+        path: '/topScrollBar',
+        exact: true,
+        component: require('../topScrollBar.js').default,
       },
       {
         path: '/user',

@@ -20,6 +20,12 @@ export default class Layout extends React.Component {
                         <li>
                             <Link to="/profile">个人中心</Link>
                         </li>
+                        <li>
+                            <Link to="/guide">css辅助线</Link>
+                        </li>
+                        <li>
+                            <Link to="/topScrollBar">顶部滚动条</Link>
+                        </li>
                     </ul>
                     </div>
                 </nav>

@@ -1,0 +1,25 @@
+.normal {
+  background: #F0F279;
+}
+
+.container {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 140px);
+}
+
+.box {
+  font-size: 50px;
+  width: 6em;
+  background-color: green;
+  height: 4em;
+  background-image:
+    linear-gradient(to bottom, transparent 95%, white 95%),
+    linear-gradient(to right, transparent 95%, white 95%),
+    linear-gradient(to top, transparent 95%, white 95%),
+    linear-gradient(to left, transparent 95%, white 95%);
+  background-size: 1em 1em;
+  background-repeat: repeat, repeat, repeat-x, repeat-y;
+}

@@ -1,4 +1,18 @@
-
 .normal {
   background: #F2AE79;
+}
+.box{
+  display: flex;
+}
+.left {
+  background-color: red;
+  height: 500px;
+  flex: 1;
+
+}
+
+.right {
+  background-color: yellow;
+  height: 500px;
+  width: 100px;
 }
