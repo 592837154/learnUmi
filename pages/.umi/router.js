@@ -14,71 +14,24 @@ const Router = DefaultRouter;
 const routes = [
   {
     path: '/',
-    component: require('../../layouts/index.js').default,
+    component: require('../../layouts/index').default,
     routes: [
       {
-        path: '/guide',
-        exact: true,
-        component: require('../guide.js').default,
-      },
-      {
         path: '/',
+        component: require('../index').default,
         exact: true,
-        component: require('../index.js').default,
       },
       {
         path: '/login',
+        component: require('../login').default,
         exact: true,
-        component: require('../login.js').default,
-      },
-      {
-        path: '/profile',
-        exact: true,
-        component: require('../profile.js').default,
-        title: '个人中心',
-        Routes: [require('../../PrivateRoute.js').default],
-      },
-      {
-        path: '/topScrollBar',
-        exact: true,
-        component: require('../topScrollBar.js').default,
-      },
-      {
-        path: '/user',
-        exact: false,
-        component: require('../user/_layout.js').default,
-        routes: [
-          {
-            path: '/user/add',
-            exact: true,
-            component: require('../user/add.js').default,
-          },
-          {
-            path: '/user/detail/:id',
-            exact: true,
-            component: require('../user/detail/$id.js').default,
-          },
-          {
-            path: '/user/list',
-            exact: true,
-            component: require('../user/list.js').default,
-          },
-          {
-            component: () =>
-              React.createElement(
-                require('/Users/kaizhu/.nvm/versions/node/v12.9.1/lib/node_modules/umi/node_modules/_umi-build-dev@1.16.12@umi-build-dev/lib/plugins/404/NotFound.js')
-                  .default,
-                { pagesPath: 'pages', hasRoutesInConfig: false },
-              ),
-          },
-        ],
       },
       {
         component: () =>
           React.createElement(
             require('/Users/kaizhu/.nvm/versions/node/v12.9.1/lib/node_modules/umi/node_modules/_umi-build-dev@1.16.12@umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
-            { pagesPath: 'pages', hasRoutesInConfig: false },
+            { pagesPath: 'pages', hasRoutesInConfig: true },
           ),
       },
     ],
@@ -88,7 +41,7 @@ const routes = [
       React.createElement(
         require('/Users/kaizhu/.nvm/versions/node/v12.9.1/lib/node_modules/umi/node_modules/_umi-build-dev@1.16.12@umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
-        { pagesPath: 'pages', hasRoutesInConfig: false },
+        { pagesPath: 'pages', hasRoutesInConfig: true },
       ),
   },
 ];

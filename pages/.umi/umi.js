@@ -21,6 +21,7 @@ plugins.init({
     'initialProps',
   ],
 });
+plugins.use(require('@/app'));
 
 // render
 let clientRender = async () => {
