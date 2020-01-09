@@ -15,7 +15,7 @@ export default class Layout extends React.Component {
                             <Link to="/">首页</Link>
                         </li>
                         <li>
-                            <Link to="/user">用户管理</Link>
+                            <Link to="/user/list">用户管理</Link>
                         </li>
                         <li>
                             <Link to="/profile">个人中心</Link>

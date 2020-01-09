@@ -1,8 +1,12 @@
-import { route, Redirect } from 'react-router-dom';
-export default (props) => {
-    console.log(props);
+import { Route, Redirect } from 'react-router-dom';
+export default ({ render, ...rest }) => {
     return (
-        // <Route />
-        null
+        <Route
+            render={
+                routeProps => (
+                    localStorage.getItem('login') ? render(routeProps) : <Redirect to="/login" />
+                )
+            }
+        />
     )
 }

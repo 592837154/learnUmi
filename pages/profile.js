@@ -1,8 +1,8 @@
-// /**
-//  * title: 个人中心
-//  * Routes:
-//  *   - ./PrivateRoute.js
-//  */
+/**
+ * title: 个人中心
+ * Routes:
+ *   - ./PrivateRoute.js
+ */
 import styles from './profile.css';
 import router from 'umi/router';
 
